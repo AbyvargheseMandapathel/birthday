@@ -20,6 +20,17 @@
  <center>Greetings123</center></div>
  
 <br><br><br>
+<input type="text" id="txtName" name="Name" value="" /><br />
+    <br />
+    
+    <input type="button" value="Send" onclick="Send()" />
+    <script type="text/javascript">
+        function Send() {
+            var name = document.getElementById("txtName").value;
+            var url = "index.html?name=" + encodeURIComponent(name);
+            window.location.href = url;
+        };
+    </script>
 </body>
 </html>
 
