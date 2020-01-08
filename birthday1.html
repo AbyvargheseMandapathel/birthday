@@ -36,6 +36,28 @@ background-color: #ccc;
 <body>
   <div class="a">
  <center>Greetings123</center></div>
+<center><h1><span id="yourname"></span>
+    <script type="text/javascript">
+        var queryString = new Array();
+        window.onload = function () {
+            if (queryString.length == 0) {
+                if (window.location.search.split('?').length > 1) {
+                    var params = window.location.search.split('?')[1].split('&');
+                    for (var i = 0; i < params.length; i++) {
+                        var key = params[i].split('=')[0];
+                        var value = decodeURIComponent(params[i].split('=')[1]);
+                        queryString[key] = value;
+                    }
+                }
+            }
+            if (queryString["name"] != null) {
+                var data = "";
+                data += " " + queryString["name"];
+                document.getElementById("yourname").innerHTML = data;
+            }
+        };
+    </script>
+</center></h1>
  <p>Wishing You a happy birthday</p>
 <hr>
 <br><br><br>
