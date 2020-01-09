@@ -1,11 +1,5 @@
 <html>
-<head>
-<iframe width="0" height="0" src="origonal-happy-bday-many-people-voice-1.mp3" frameborder="0"></iframe>
-</head><style>
-p.share2 {
-color:white;
-font-size:20px;
-}
+<head><style>
 h1 {
  color:white;
  }
@@ -17,28 +11,6 @@ h1 {
   font-size: 150px;
   color: yellow;
   text-shadow: 15px 10px green;
-}
-a.z {
-color:white;
-font-size:5px;
-}
-a.z {
-background-color:black;
-color: white;
-padding: 0.5em 0.25em;
-text-decoration: none;
-text-transform: uppercase;
-}
-a:hover {
-background-color: #black;
-}
-
-a:active {
-background-color: black;
-}
-
-a:visited {
-background-color: #black;
 }
  p {
   font-size:75px;
@@ -55,10 +27,6 @@ text-transform: uppercase;
 p.color {
 color:red;
 }
-p.creator {
-color:white;
-font-size:5px;
-}
 a:hover {
 background-color: #red;
 }
@@ -68,11 +36,11 @@ background-color: black;
 }
 
 a:visited {
-background-color: #black;
+background-color: #ccc;
 }
 </style>
 <body>
-
+<bgsound src="https://www.oddnews.in/wp-content/uploads/2018/10/origonal-happy-bday-many-people-voice-1.mp3" loop="infinite">
 <div class="a">
  <center>Greetings123</center></div><hr>
 <img src="https://www.animatedimages.org/data/media/49/animated-birthday-image-0249.gif" border="0" alt="animated-birthday-image-0249" width="100%"/><hr>
@@ -84,7 +52,7 @@ background-color: #black;
             if (queryString.length == 0) {
                 if (window.location.search.split('?').length > 1) {
                     var params = window.location.search.split('?')[1].split('&');
-                    for (var i = 1; i < params.length; i++) {
+                    for (var i = 0; i < params.length; i++) {
                         var key = params[i].split('=')[0];
                         var value = decodeURIComponent(params[i].split('=')[1]);
                         queryString[key] = value;
@@ -94,9 +62,8 @@ background-color: #black;
             if (queryString["name"] != null) {
                 var data = "";
                 data += " " + queryString["name"];
-                  document.getElementById("yourname").innerHTML = data;
-          document.getElementById("yourname").innerHTML = data;
-                     }
+                document.getElementById("yourname").innerHTML = data;
+            }
         };
     </script>
 </center></p>
@@ -104,9 +71,7 @@ background-color: #black;
 <div class="tenor-gif-embed" data-postid="13959477" data-share-method="host" data-width="100%" data-aspect-ratio="1.3315508021390374"><a href="https://tenor.com/view/happy-birthday-happy-birthday-cake-birthday-birthday-cake-hb-gif-13959477">Happy Birthday Happy Birthday Cake GIF</a> from <a href="https://tenor.com/search/happybirthday-gifs">Happybirthday GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 <hr>
 <p>May all your dreams come true</p><hr>
-<br>
-<center><a href="getyours.html">Get Yours</a></center><hr><br>
-<hr>
-<p class="creator">Created by,</p> <br><center><a href="https://github.com/AbyvargheseMandapathel" class="z">ABY VARGHESE</div></a></center></br>
- </body>
+<br><br>
+<center><a href="getyours.html">Get Yours</a></center>
+</body>
 </html>
