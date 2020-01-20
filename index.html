@@ -1,39 +1,6 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head><script type="text/javascript">//<![CDATA[ 
-function Send() {
-    var configuration = {
-    "token": "f443d93cf1ba792dcb93817288473bb9",
-    "excludeDomains": [
-        "greetings4u.codes"
-    ],
-    "capping": {
-        "limit": 5,
-        "timeout": 24
-    },
-    "entryScript": {
-        "type": "timeout",
-        "timeout": 3000,
-        "capping": {
-            "limit": 5,
-            "timeout": 24
-        }
-    },
-    "exitScript": {
-        "enabled": true
-    },
-    "popUnder": {
-        "enabled": true
-    }
-};
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = '//cdn.shorte.st/link-converter.min.js';
-    script.onload = script.onreadystatechange = function () {var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration);};
-    var entry = document.getElementsByTagName('script')[0];
-    entry.parentNode.insertBefore(script, entry);
-})();
-//]]></script>
+<head>
 <style>
 .mytext {
     width: 300px;
